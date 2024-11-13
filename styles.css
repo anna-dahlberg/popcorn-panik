@@ -1,3 +1,4 @@
+/* Color variables */
 :root {
     --boneWhite: #FFFDFB;
     --midnightBlack: #1E1E1E;
@@ -6,6 +7,7 @@
     --painfulPurple: #4D196D;
 }
 
+/* Font face links */
 @font-face {
     font-family: 'Special Elite';
     src: url(assets/Special_Elite/SpecialElite-Regular.ttf);
@@ -22,3 +24,11 @@
     font-family: 'Nunito Sans';
     src: url(assets/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf);
 }
+
+/* Basic styling  */
+
+* {
+    box-sizing: border-box;
+    background-color: var(--midnightBlack);
+}
+
