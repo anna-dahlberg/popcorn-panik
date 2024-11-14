@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Popcorn & Panik</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="hero"></div>
-
-<div class="pageContent">
-    <div class="currentMovies">
-        <div class="currentMoviesHeader">
-            <h3>Aktuella filmer:</h3>
+    
+    <!-- Hero container -->
+    <header>
+        <div class="hero">
+            <h1 class="heroTitle">Popcorn & Panik</h1>
+            <img src="" alt="" class="heroImage">
+            <div class="heroTextContainer">
+                <p class="heroText">En bioupplevelse 
+                    som jagar dig 
+                    hela vägen 
+                    hem</p>
+                <img src="" alt="" class="heroLogo">
+            </div>
         </div>
-        <div class="currentMoviesContainer">
-            <div></div>
-            <div></div>
-        </div>
-    </div>
+    </header>
 
-    <div class="offer"></div>
+    <!-- Main page content -->
+    
+    <main class="pageContent"> 
 
-    <div class="upcomingMovies">
-        <div class="upcomingMoviesHeader">
-            <h3>Kommande filmer</h3>
-        </div>
-        <div class="upcomingMoviesContainer">
-            <div></div>
-            <div></div>
-        </div>
-    </div>
+        <!--Aktuella filmer conatiner -->
+        <section class="currentMovies">
+            <div class="currentMoviesHeaderContainer">
+                <h3 class="currentMoviesHeader">Aktuella filmer:</h3>
+            </div>
+            <div class="currentMoviesContainer">
+                <div></div>
+                <div></div>
+            </div>
+        </section>
 
-    <div class="newsletter"></div>
-  </div>
+        <!-- Erbjudande container -->
+
+        <section class="offer">
+            <div class ="offerHeaderContainer">
+                <h3 class="offerHeader">Nervkittlande Nattbio!</h3>
+                <p class="offerText">Boka en biljett till midnattsvisningen och få gratis påfyllning av popcorn hela natten (om du vågar stanna).</p>
+            </div>
+        </section>
+
+        <!--Kommande filmer container-->
+
+        <section class="upcomingMovies">
+            <div class="upcomingMoviesHeaderContainer">
+                <h3 class="upcomingMoviesHeader">Kommande filmer</h3>
+            </div>
+            <div class="upcomingMoviesContainer">
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+        <!--Nyhetsbrev container-->
+        <section class="newsletter">
+            <div class="newsletterHeaderContainer">
+                <h3 class="newsletterHeader">Få kalla kårar direkt i inkorgen!</h3>
+                <p class="newsletterText">Vill du vara först med att höra om kommande skräckfilmer, exklusiva erbjudanden och nattbio för de modigaste? Vårt nyhetsbrev tar dig bakom kulisserna och serverar de mörkaste hemligheterna direkt i din inkorg. 
+                    Men var beredd – vissa saker är svåra att få ogjorda…</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer section-->
+
     <footer>
-      <p>Popcorn & Panik, 1438 Elm Street</p>
+        <div class="footerTextContainer">
+            <div class="footerText">Popcorn & Panik</div>
+            <div class="footerAdress">Popcorn & Panik, 1438 Elm Street</div>
+        </div>
+
+        <div class="footerLogoContainer">
+            <img src="" alt="" class="footerLogo">
+        </div>
     </footer>
+
 </body>
 </html>
