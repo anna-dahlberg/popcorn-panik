@@ -36,6 +36,21 @@ body {
     font-size: 8px;
 }
 
+
+.currentMoviesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.upcomingMoviesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1 rem;
+    padding: 1 rem;
+}
+
 .footer {
     .footer {
         display: flex;
@@ -46,37 +61,11 @@ body {
 
 /* media queries */
 
-@media (max-width: 75rem) { 
-
-        .currentMoviesContainer {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            padding: 1rem;
-        }
-
-        .upcomingMoviesContainer {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1 rem;
-            padding: 1 rem;
-        }
-}
-
 @media (min-width: 75rem) {
-   
-            .currentMoviesContainer {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1 rem;
-            padding: 1 rem;
-            }
-
-        .upcomingMoviesContainer {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1 rem;
-            padding: 1 rem;
-            }
+   .pageContent {
+   display: grid;
+   grid-template-columns: repeat(2, 1 fr);
+   gap: 2 rem;
+   }
 }
 
