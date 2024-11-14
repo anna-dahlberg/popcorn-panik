@@ -32,3 +32,79 @@
     background-color: var(--midnightBlack);
 }
 
+body {
+    font-size: 8px;
+}
+
+.footer {
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+}
+
+/* media queries */
+
+@media (max-width: 75rem) { 
+    .currentMoviesOffer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2);
+        gap: 1rem;
+        padding: 1rem;
+        }
+
+        .currentMoviesContainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+ .upcomingMoviesNewsletter {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2);
+        gap: 1rem;
+        padding: 1rem;
+        }
+
+        .upcomingMoviesContainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1 rem;
+            padding: 1 rem;
+        }
+}
+
+@media (min-width: 75rem) {
+    .currentMoviesOffer {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+        }
+
+            .currentMoviesContainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1 rem;
+            padding: 1 rem;
+            }
+
+     .upcomingMoviesOffer {
+        display: grid;            
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+        }
+
+        .upcomingMoviesContainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1 rem;
+            padding: 1 rem;
+            }
+}
+
