@@ -33,8 +33,9 @@
 }
 
 body {
-    font-size: 8px;
+    font-size: 16px;
 }
+
 
 
 .currentMoviesContainer {
@@ -61,11 +62,19 @@ body {
 
 /* media queries */
 
-@media (min-width: 75rem) {
+@media (min-width: 30rem) {
    .pageContent {
    display: grid;
    grid-template-columns: repeat(2, 1 fr);
    gap: 2 rem;
    }
+}
+
+@media (min-width: 48rem) { /* Equivalent to 768px */
+    /* Styles for tablets */
+}
+
+@media (min-width: 64rem) { /* Equivalent to 1024px */
+    /* Styles for desktops */
 }
 
