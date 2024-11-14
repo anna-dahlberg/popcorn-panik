@@ -10,19 +10,19 @@
 /* Font face links */
 @font-face {
     font-family: 'Special Elite';
-    src: url(assets/Special_Elite/SpecialElite-Regular.ttf);
+    src: url(aassets/fonts/Special_Elite/SpecialElite-Regular.ttf);
     font-weight: 400; 
 }
 
 @font-face {
     font-family: 'Ghastly Panic';
-    src: url(assets/ghastly_panic/GhastlyPanic.ttf);
+    src: url(assets/fonts/ghastly_panic/GhastlyPanic.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Nunito Sans';
-    src: url(assets/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf);
+    src: url(assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf);
 }
 
 /* Basic styling  */
