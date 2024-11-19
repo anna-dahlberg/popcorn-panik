@@ -35,44 +35,116 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--midnightBlack);
+    background-color: var(--painfulPurple);
+    color: var(--boneWhite);
     font-family: 'Nunito Sans';
 }
 
 /* Hero styling */
+
 .hero {
     position: relative; /* Ensures child elements can be positioned absolutely */
     width: 100%; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
+    /*height: 50vh; /* Full height of the viewport */
     background-image: url('/assets/images/heroStartPageLarge.jpg'); /* hero image */
     background-size: cover; /* Scale the image to cover the container */
     background-position: center; /* Center the image */
+    margin: 0;
+    padding: 0;
+    height: calc(100vw * 9 / 16);
 }
 
-/* Hero title styling */
 .heroTitle {
-    font-family: 'Ghastly Panic'; /* Your custom font */
-    font-size: clamp(96px, 10vw + 40px, 248px);
-    color: var(--bloodRed);
+    font-family: 'Ghastly Panic';
     font-weight: lighter;
-    text-align: center; /* Center-align text */
+    font-size: clamp(84px, 10vw + 50px, 248px);
+    color: var(--bloodRed);
+    text-align: center;
     margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    position: relative;
-    top: 40px;
+    padding: 20% 0 0 0; /* Remove default padding */
 }
-
-.heroText {
-    position: relative;
-    top: 80px;
-    left: 20px;
-}
-
 
 /* Main content */
 
+main {
+    background-color: var(--midnightBlack);
+    padding: 1.5rem 0 1.5rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
 
-.currentMoviesContainer {
+section {
+    width: 21rem;
+    height: auto;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: 'Special Elite';
+    font-weight: 300;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+/* Current Movies styling */
+
+.currentMoviesHeader {
+    color: var(--bloodRed);
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+}
+
+.currentMoviesContainer, .upcomingMoviesContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Offer styling */
+
+.offerHeader {
+    font-size: 2.375rem;
+    text-transform: uppercase;
+}
+
+/* Upcoming Movies styling */
+
+.upcomingMoviesHeader {
+    color: var(--bloodRed);
+    font-size: 2rem;
+}
+
+/* Newsletter styling */
+
+
+.newsletterHeader {
+    font-size: 1.5rem;
+}
+
+.newsletterInput {
+    border-radius: 1.5rem;
+    background-color: var(--graveyardGreen);
+    width: 21.25rem;
+    height: 3rem;
+    border: none;
+    text-align: center;
+    font-family: 'Nunito Sans';
+    font-size: 1rem;
+    color: #FFF !important;
+}
+
+.newsletterInput::placeholder{
+    color: var(--boneWhite);
+}
+
+
+/* .currentMoviesContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -84,31 +156,62 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1 rem;
     padding: 1 rem;
+} */
+
+/* Button styling */
+
+.button {
+    background-color: var(--painfulPurple);
+    color: var(--boneWhite);
+    border-radius: 25px;
+    height: 2rem;
+    width: auto;
+    padding: 0.5rem 2rem;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    line-height: normal;
 }
 
-.footer {
-    .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+.button:hover {
+    background-color: var(--boneWhite);
+    color: var(--midnightBlack);
+}
+
+.button:visited {
+    background-color: var(--graveyardGreen);
+}
+
+/* Footer styling */
+
+footer {
+    background-color: var(--painfulPurple);
 }
 
 /* media queries */
 
 @media (min-width: 30rem) {
-   .pageContent {
+   /* .pageContent {
    display: grid;
    grid-template-columns: repeat(2, 1 fr);
-   gap: 2 rem;
+   gap: 2 rem; */
    }
-}
 
-@media (min-width: 48rem) { /* Equivalent to 768px */
-    /* Styles for tablets */
-}
+@media (min-width: 768px) {
+    .hero {
+      height: 100vh; /* Fullscreen for larger screens */
+    }
+  }
 
 @media (min-width: 64rem) { /* Equivalent to 1024px */
-    /* Styles for desktops */
+    .hero {
+        height: 100vh; /* Fullscreen for larger screens */
+      }
 }
+
+
+
 
