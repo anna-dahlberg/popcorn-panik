@@ -193,7 +193,7 @@ footer {
 
 /* media queries */
 
-@media (min-width: 30rem) {
+@media (min-width: 30rem) { /* ANVÄND INTE REM HÄR */
    /* .pageContent {
    display: grid;
    grid-template-columns: repeat(2, 1 fr);
@@ -206,7 +206,7 @@ footer {
     }
   }
 
-@media (min-width: 64rem) { /* Equivalent to 1024px */
+@media (min-width: 1024rem) { /* Equivalent to 1024px */
     .hero {
         height: 100vh; /* Fullscreen for larger screens */
       }
