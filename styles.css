@@ -87,19 +87,19 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: auto;
+    height: 82rem;
 }
 
 section {
-    width: 604px;
-    height: 495px;
+    width: 38rem;
+    height: 31rem;
     box-sizing: border-box;
 }
 
 h3 {
     font-family: 'Special Elite';
     font-weight: 300;
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 img {
@@ -111,7 +111,7 @@ img {
 
 .currentMoviesHeader {
     color: var(--bloodRed);
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
     padding: 1rem 0 1rem 0;
 }
@@ -124,7 +124,7 @@ img {
 /* Offer styling */
 
 .offerHeader {
-    font-size: 2.375rem;
+    font-size: 4rem;
     text-transform: uppercase;
 }
 
@@ -132,7 +132,7 @@ img {
 
 .upcomingMoviesHeader {
     color: var(--bloodRed);
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /* Newsletter styling */
@@ -199,7 +199,7 @@ footer {
 @media (max-width: 480px) { /* ANVÄND INTE REM HÄR */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* ANVÄND INTE REM HÄR */
     .hero {
         background-image: url('/assets/images/heroStartPageSmall.jpg');
         height: 375px;
@@ -209,23 +209,35 @@ footer {
         top: 40px;
     }
     .heroLogo {
-        width: 30.491px;
-        height: 36.481px;
+        width: 2rem;
+        height: 2.39rem;
         transform: rotate(-6.094deg);
     }
     
     section {
-        width: 390px;
-        height: 312.807px;
+        width: 24rem;
+        height: 20rem;
     }
 
-    h3 {
-        
+    main {
+        height: 100rem;
     }
+
+   .currentMoviesHeader {
+    font-size: 2rem;
+   }
+
+   .offerHeader {
+    font-size: 2.375rem;
+   }
+
+   .upcomingMoviesHeader {
+    font-size: 2rem;
+   }
+
 }
 
-@media (min-width: 1024rem) { /* Equivalent to 1024px */
-    
+@media (min-width: 1024px) { /* ANVÄND INTE REM HÄR */
 }
 
 
