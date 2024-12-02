@@ -10,7 +10,7 @@
 /* Font face links */
 @font-face {
     font-family: 'Special Elite';
-    src: url(aassets/fonts/Special_Elite/SpecialElite-Regular.ttf);
+    src: url(assets/fonts/Special_Elite/SpecialElite-Regular.ttf);
     font-weight: 400; 
 }
 
@@ -82,7 +82,7 @@ body {
 
 main {
     background-color: var(--midnightBlack);
-    padding: 1.5rem 0 1.5rem 0;
+    padding: 3rem 0 1.5rem 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -103,8 +103,7 @@ h3 {
 }
 
 img {
-    width: 50%;
-    height: 50%;
+    width: 45%;
 }
 
 /* Current Movies styling */
@@ -123,9 +122,21 @@ img {
 
 /* Offer styling */
 
+.offerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
 .offerHeader {
     font-size: 4rem;
     text-transform: uppercase;
+    margin: 0;
+}
+
+.offerText {
+    font-size: 2rem;
 }
 
 /* Upcoming Movies styling */
@@ -139,19 +150,25 @@ img {
 
 
 .newsletterHeader {
+    font-size: 3rem;
+}
+
+.newsletterText {
     font-size: 1.5rem;
 }
 
 .newsletterInput {
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     background-color: var(--graveyardGreen);
-    width: 21.25rem;
-    height: 3rem;
+    width: 29rem;
+    height: 4rem;
     border: none;
-    text-align: center;
+    text-align: left;
+    padding-left: 2rem;
     font-family: 'Nunito Sans';
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #FFF !important;
+    margin-bottom: 20px;
 }
 
 .newsletterInput::placeholder{
@@ -166,8 +183,8 @@ img {
 .button {
     background-color: var(--painfulPurple);
     color: var(--boneWhite);
-    border-radius: 25px;
-    height: 2rem;
+    border-radius: 2rem;
+    height: 4rem;
     width: auto;
     padding: 0.5rem 2rem;
     border: none;
@@ -175,8 +192,7 @@ img {
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
-    font-size: 1rem;
-    line-height: normal;
+    font-size: 2rem;
 }
 
 .button:hover {
@@ -192,6 +208,33 @@ img {
 
 footer {
     background-color: var(--painfulPurple);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footerTextContainer {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.footerText {
+    font-family: 'Ghastly Panic';
+    color: var(--bloodRed);
+    font-size: 3rem;
+}
+
+.footerAdress {
+    opacity: 0.7;
+}
+
+.footerLogo {
+    width: 47.917px;
+    height: 59.537px;
+    transform: rotate(-6.189deg);
 }
 
 /* media queries */
@@ -234,6 +277,41 @@ footer {
    .upcomingMoviesHeader {
     font-size: 2rem;
    }
+
+   .offerText {
+    font-size: 1.4rem;
+   }
+
+   .button {
+    height: 2rem;
+    font-size: 1rem;
+    }
+
+    .newsletterHeader {
+        font-size: 1.5rem;
+    }
+
+    .newsletterText {
+        font-size: 1rem;
+    }
+
+    .newsletterInput {
+        width: 342px;
+    }
+
+    .footerText {
+        font-size: 24px;
+    }
+
+    .footerAdress {
+        font-size: 12px;
+    }
+
+    .footerLogo {
+        width: 35.575px;
+        height: 44.202px;
+    }
+
 
 }
 
