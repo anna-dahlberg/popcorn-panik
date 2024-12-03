@@ -255,8 +255,8 @@ footer {
 }
 
 .actors {
-    background-color: #9F9F9F;
-    color: var(--midnightBlack);
+    background-color:var(--midnightBlack);
+    color: var(--boneWhite);
     font-family: 'Special Elite';
 }
 
