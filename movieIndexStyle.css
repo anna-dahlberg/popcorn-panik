@@ -2,7 +2,7 @@
 :root {
     --boneWhite: #FFFDFB;
     --midnightBlack: #1E1E1E;
-    --bloodRed: #B30100;                    /* Vi behöver en färgvariabel för #9F9F9F (grå)! */
+    --bloodRed: #B30100;                 
     --graveyardGreen: #3A4A37;
     --painfulPurple: #4D196D;
 }
@@ -43,25 +43,39 @@ body {
 /* Hero styling */
 
 .hero {
-    position: relative; /* Ensures child elements can be positioned absolutely */
-    width: 100%; /* Full width of the viewport */
-    /*height: 50vh; /* Full height of the viewport */
-    background-image: url('/assets/images/heroStartPageLarge.jpg'); /* hero image */
-    background-size: cover; /* Scale the image to cover the container */
-    background-position: center; /* Center the image */
+    /* position: relative;  */
+    width: 100%; 
+    height: 45rem;
+    background-image: url('/assets/images/heroStartPageLarge.jpg'); 
+    background-size: cover; 
+    background-position: center; 
     margin: 0;
     padding: 0;
-    height: calc(100vw * 9 / 16);
 }
 
 .heroTitle {
     font-family: 'Ghastly Panic';
     font-weight: lighter;
-    font-size: clamp(84px, 10vw + 50px, 248px);
+    font-size: clamp(5.25rem, 10vw + 3.125rem, 15.5rem);
     color: var(--bloodRed);
     text-align: center;
     margin: 0; /* Remove default margin */
-    padding: 20% 0 0 0; /* Remove default padding */
+    padding: 4.5rem 0 0 0; 
+}
+
+.heroText {
+    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    position: relative;
+    left: 130px;
+    top: 80px;
+}
+
+.heroLogo {
+    position: absolute;
+    width: 82.848px;
+    height: 102.937px;
+    transform: rotate(-6.189deg);
+
 }
 
 /* Main content */
@@ -282,6 +296,39 @@ footer {
     padding: 1rem;
 }
 
+/* Footer styling */
+
+footer {
+    background-color: var(--painfulPurple);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footerTextContainer {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.footerText {
+    font-family: 'Ghastly Panic';
+    color: var(--bloodRed);
+    font-size: 3rem;
+}
+
+.footerAdress {
+    opacity: 0.7;
+}
+
+.footerLogo {
+    width: 47.917px;
+    height: 59.537px;
+    transform: rotate(-6.189deg);
+}
+
 /* media queries */
 
 @media (min-width: 30rem) { /* ANVÄND INTE REM HÄR */
@@ -291,10 +338,21 @@ footer {
    gap: 2 rem; */
    }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) { /* ANVÄND INTE REM HÄR */
     .hero {
-      height: 100vh; /* Fullscreen for larger screens */
+        background-image: url('/assets/images/heroStartPageSmall.jpg');
+        height: 375px;
     }
+    .heroText {
+        left: 25px;
+        top: 40px;
+    }
+    .heroLogo {
+        width: 2rem;
+        height: 2.39rem;
+        transform: rotate(-6.094deg);
+    }
+
 
     .imageRotator {
         position: relative;
@@ -333,6 +391,19 @@ footer {
     .actorImageContainer {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+    }
+
+    .footerText {
+        font-size: 24px;
+    }
+
+    .footerAdress {
+        font-size: 12px;
+    }
+
+    .footerLogo {
+        width: 35.575px;
+        height: 44.202px;
     }
 
   }
