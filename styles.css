@@ -32,10 +32,14 @@
     font-size: 16px;
 }
 
+html, body {
+    overflow-x: hidden;
+  }
+
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--painfulPurple);
+    background-color: var(--midnightBlack);
     color: var(--boneWhite);
     font-family: 'Nunito Sans';
 }
@@ -81,7 +85,6 @@ body {
 /* Main content */
 
 main {
-    background-color: var(--midnightBlack);
     padding: 3rem 0 1.5rem 0;
     display: flex;
     flex-direction: row;
@@ -102,7 +105,7 @@ h3 {
     font-size: 3rem;
 }
 
-img {
+.currentMovieImg, .upcomingMovieImg {
     width: 45%;
 }
 
@@ -117,7 +120,21 @@ img {
 
 .currentMoviesContainer, .upcomingMoviesContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.currentMoviesContainer a, .upcomingMoviesContainer a {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--graveyardGreen);
+}
+
+.currentMoviesContainer a:hover, .upcomingMoviesContainer a:hover {
+    color: var(--boneWhite);
 }
 
 /* Offer styling */
@@ -174,7 +191,6 @@ img {
 .newsletterInput::placeholder{
     color: var(--boneWhite);
 }
-
 
 
 
@@ -297,6 +313,8 @@ footer {
 
     .newsletterInput {
         width: 342px;
+        height: 3rem;
+        font-size: 1rem;
     }
 
     .footerText {

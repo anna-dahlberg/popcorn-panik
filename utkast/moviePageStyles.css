@@ -32,10 +32,14 @@
     font-size: 16px;
 }
 
+html, body {
+    overflow-x: hidden;
+  }
+
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--painfulPurple);
+    background-color: var(--midnightBlack);
     color: var(--boneWhite);
     font-family: 'Nunito Sans';
 }
@@ -59,7 +63,7 @@ body {
     font-size: clamp(5.25rem, 10vw + 3.125rem, 15.5rem);
     color: var(--bloodRed);
     text-align: center;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
     padding: 4.5rem 0 0 0; 
 }
 
@@ -134,17 +138,56 @@ h3 {
 
 .ticketHeader {
     background-color: var( --graveyardGreen);
-    width: 255.861px;
-    height: 42.467px;
-    border-radius: 1.5rem;
+    width: 400px;
+    height: 66px;
+    border-radius: 2rem;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     padding-left: 2rem;
 }
 
 .ticketHeader h3 {
-    
+    font-size: 32px;
+    text-align: center;
 }
 
+.ticketDates {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--boneWhite);
+    margin: 24px 16px 16px 16px;
+}
+
+.ticketDate {
+    font-size: 24px;
+    font-family: 'Special Elite';
+    color: var(--graveyardGreen);
+    margin: 16px 16px 0 16px;
+}
+
+.ticketPrice {
+    color: var(--painfulPurple);
+    margin: 16px;
+    font-size: 20px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.ticketPrice a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--painfulPurple);
+}
+
+.ticketPrice a:hover {
+    color: var(--bloodRed);
+}
 /* Newsletter styling */
 
 
@@ -262,7 +305,7 @@ footer {
     }
 
     main {
-        height: 100rem;
+        height: auto;
         padding: 0.7rem;
         align-content: flex-start;
         gap: 2rem;
@@ -276,15 +319,30 @@ footer {
     font-size: 1rem;
    }
 
-  
-
    .ticketHeader {
-    font-size: 2rem;
-    margin-top: 0;
+    width: 255px;
+    height: 42px;
+    padding-left: 16px;
+   }
+
+   .ticketHeader h3 {
+    font-size: 24px;
    }
 
    .offerText {
     font-size: 1.4rem;
+   }
+
+   .ticketDates {
+    width: 340px;
+   }
+
+   .ticketDate {
+    font-size: 20px;
+   }
+
+   .ticketPrice {
+    font-size: 16px;
    }
 
    .button {
@@ -292,16 +350,8 @@ footer {
     font-size: 1rem;
     }
 
-    .newsletterHeader {
-        font-size: 1.5rem;
-    }
-
-    .newsletterText {
-        font-size: 1rem;
-    }
-
-    .newsletterInput {
-        width: 342px;
+    .newsletter {
+        display: none;
     }
 
     .footerText {
