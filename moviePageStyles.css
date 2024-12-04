@@ -260,10 +260,13 @@ h3 {
 }
 
 .actors {
+    width: 100%;
+}
+
+.actorImageContainer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: center; 
+    justify-content: space-around; 
 }
 
 .actorPhoto img {
@@ -413,6 +416,29 @@ footer {
 
     .newsletter {
         display: none;
+    }
+
+    .actorImageContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+    }
+    
+    .actorPhoto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 40%;
+        margin-bottom: 2rem; 
+    }
+    
+    .actorPhoto img {
+        width: 100%;
+        height: auto; 
+        border-radius: 50%;
     }
 
     .footerText {
